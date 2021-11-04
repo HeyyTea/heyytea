@@ -23,8 +23,12 @@ body {
 header {
 	width: 100%;
 	height: 5%;
-	background-color: #e4cd81;
-	background-image: url("../images/metalicGold.png");
+	background-color: #f0eed3;
+/*
+	background-image: url("../images/goldBanner.png");
+  	background-repeat: no-repeat;
+  	background-size: 100% 100%;
+*/
 /*	border-bottom: 1px solid #2C9AB7;*/
 }
 .logo {
@@ -153,13 +157,63 @@ ul li:hover a {
 }
 /* Parallax Section */
 .banner {
-	background-color: #f0eed3;
-	background-image: url(../images/parallax.png);
+/*	background-color: #f0eed3;*/
+	
+	background-image: url("../images/goldBanner.png");
+  	background-repeat: no-repeat;
+  	background-size: 100% 100%;
+	
 	height: 400px;
+	
+/*
+	background-image: url(../images/parallax.png);
 	background-attachment: fixed;
 	background-size: cover;
 	background-repeat: no-repeat;
+*/
 }
+#menu{
+	height: 100%;
+}
+.imCenter {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+/* The overlay effect (full height and width) - lays on top of the container and over the image */
+.overlay {
+  opacity: 0;
+  transition: .3s ease;
+  background-color: red;
+}
+#o1{
+  position: absolute;
+  top: -20px; bottom: 0; left: -153px; right: 0; height: 10%; width: 10%;
+}
+
+/* When you mouse over the container, fade in the overlay icon*/
+.hiddenOverlay:hover .overlay {
+  opacity: 1;
+}
+/* The icon inside the overlay is positioned in the middle vertically and horizontally */
+.icon {
+  color: white;
+  font-size: 100px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+/* When you move the mouse over the icon, change color */
+.fa-user:hover {
+  color: #eee;
+}
+
 .parallax {
 	color: #ffb0b0;
 	text-align: right;
@@ -227,11 +281,11 @@ footer .footer_column p {
 	padding-left: 10px;
 	text-align: center;
 	vertical-align: middle;
-	border-radius: 0px;
+/*	border-radius: 0px;*/
 	text-transform: uppercase;
 	font-weight: bold;
 	letter-spacing: 2px;
-	border: 3px solid #FFFFFF;
+/*	border: 3px solid #FFFFFF;*/
 	color: #FFFFFF;
 	transition: all 0.3s linear;
 }
@@ -249,7 +303,7 @@ footer .footer_column p {
 	text-transform: uppercase;
 	font-weight: lighter;
 	letter-spacing: 2px;
-	border-top-width: 2px;
+/*	border-top-width: 2px;*/
 }
 .footer_banner {
 	background-color: #B3B3B3;
