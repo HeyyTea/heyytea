@@ -83,7 +83,7 @@ ul li:hover a {
 	padding-top: 150px;
 	padding-bottom: 150px;
 	background-image: url("../images/logo.jpg");
-  	background-size: 60% 100%;
+  	background-size: auto 100%;
   	background-position: center;
   	background-repeat: no-repeat;
 }
@@ -141,12 +141,18 @@ ul li:hover a {
 	float: left;
 	margin-top: 35px;
 }
-.gallery .thumbnail h4 {
+.gallery h1 {
+	margin-right: 5px;
+	margin-bottom: 0px;
+	margin-left: 5px;
+	color: #b300b3;
+}
+.gallery .thumbnail h2 {
 	margin-top: 5px;
 	margin-right: 5px;
 	margin-bottom: 5px;
 	margin-left: 5px;
-	color: #52BAD5;
+	color: #ff80ff;
 }
 .gallery .thumbnail p {
 	margin-top: 0px;
@@ -174,6 +180,7 @@ ul li:hover a {
 }
 #menu{
 	height: 100%;
+	background-image: url("../images/Wings.png")
 }
 .imCenter {
   display: block;
@@ -253,6 +260,12 @@ footer .footer_column h3 {
 footer .footer_column p {
 	color: #717070;
 	background-color: #FFFFFF;
+}
+footer .footer_column h1 {
+	color: #717070;
+	background-color: #FFFFFF;
+	font-size: 50px;
+	font-family: "Lucida Handwriting";
 }
 .cards {
 	width: 100%;
